@@ -7932,7 +7932,7 @@ function _emscripten_asm_const_iii(code, sigPtr, argbuf) {
         HEAP32[(((keyEventData)+(80))>>2)]=e.metaKey;
         HEAP32[(((keyEventData)+(84))>>2)]=e.repeat;
         stringToUTF8(e.locale ? e.locale : "", keyEventData + 88, 32);
-        stringToUTF8(e.char ? e.char : "", keyEventData + 120, 32);
+        stringToUTF8(e.char ? e.char : "", keyEventData + 16, 32);
         HEAP32[(((keyEventData)+(152))>>2)]=e.charCode;
         HEAP32[(((keyEventData)+(156))>>2)]=e.keyCode;
         HEAP32[(((keyEventData)+(160))>>2)]=e.which;
